@@ -37,7 +37,7 @@ public class SelectionSort {
                     minValue = arr[j];
                 }
             }
-            MyArrayUtil.changeArrayElementIndex(arr, i, minIndex);
+            MyArrayUtil.swap(arr, i, minIndex);
         }
         return arr;
     }
