@@ -37,6 +37,11 @@ public class ReverseNodeInKGroup {
         return head;
     }
 
+    /**
+     * 获取从start节点开始的往后的第k个节点
+     * start节点算第1个
+     * @param start 第1个节点
+     */
     public static ListNode getKGroupNode(ListNode start,int k){
         while (--k != 0 && start != null){
             start = start.next;
@@ -45,6 +50,11 @@ public class ReverseNodeInKGroup {
     }
 
 
+    /**
+     * 反转start到end节点的链表
+     * @param start 开始节点
+     * @param end 结束节点
+     */
     public static void reverseGroupNode(ListNode start,ListNode end){
         end = end.next;
         ListNode pre = null;
@@ -60,7 +70,7 @@ public class ReverseNodeInKGroup {
             //当前节点变更为下一个节点
             cur = next;
         }
-        //变更开始节点位置
+        //让反转后的链表最后一个节点指向下一组节点的第一个节点
         start.next = end;
     }
 
