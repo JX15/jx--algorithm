@@ -1,4 +1,4 @@
-package com.jiangxin.demo.algorithm.rookie;
+package com.jiangxin.demo.algorithm.rookie.array;
 
 
 import com.jiangxin.demo.algorithm.utils.MyArrayUtil;
