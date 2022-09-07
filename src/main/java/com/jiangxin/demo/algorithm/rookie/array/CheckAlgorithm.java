@@ -11,6 +11,6 @@ public class CheckAlgorithm {
     public static void main(String[] args) {
         BubbleSort bubbleSort = new BubbleSort();
         InsertionSort insertionSort = new InsertionSort();
-        MyArrayUtil.checkAlgorithm(bubbleSort::doSort, insertionSort::doSort);
+        MyArrayUtil.checkAlgorithm(bubbleSort::doSort, insertionSort::doSort,1000000,100,1000);
     }
 }

@@ -43,16 +43,19 @@ public class MyArrayUtil {
             return null;
         }
         int[] copyArr = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            copyArr[i] = arr[i];
-        }
+        System.arraycopy(arr, 0, copyArr, 0, arr.length);
         return copyArr;
     }
 
-    public static void checkAlgorithm(Function<int[],int[]> algorithmOne,Function<int[],int[]> algorithmTwo){
-        int times = 1000000;
-        int maxArrayLength = 5;
-        int maxArrayValue = 10000;
+    /**
+     * 整数 - 对数器
+     * @param algorithmOne 算法1
+     * @param algorithmTwo 算法2
+     * @param times 比对次数
+     * @param maxArrayLength 数组长度上限
+     * @param maxArrayValue 数组值上限
+     */
+    public static void checkAlgorithm(Function<int[],int[]> algorithmOne,Function<int[],int[]> algorithmTwo,int times,int maxArrayLength,int maxArrayValue){
         System.out.println("开始校验");
         for (int i = 0; i < times; i++) {
             int[] randomArray = getRandomArray(maxArrayLength, maxArrayValue);
