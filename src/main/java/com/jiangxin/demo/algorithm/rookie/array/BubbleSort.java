@@ -10,13 +10,14 @@ import com.jiangxin.demo.algorithm.utils.MyArrayUtil;
 public class BubbleSort {
 
     public static void main(String[] args) {
+        BubbleSort bubbleSort = new BubbleSort();
         int[] randomArray = MyArrayUtil.getRandomArray(20, 100);
         MyArrayUtil.printArray(randomArray);
-        int[] res = doSort(randomArray);
+        int[] res = bubbleSort.doSort(randomArray);
         MyArrayUtil.printArray(res);
     }
 
-    public static int[] doSort(int[] arr){
+    public int[] doSort(int[] arr){
         if (arr == null || arr.length < 2){
             return arr;
         }
