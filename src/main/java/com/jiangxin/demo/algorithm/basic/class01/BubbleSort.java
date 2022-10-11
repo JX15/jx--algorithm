@@ -7,6 +7,7 @@ import com.jiangxin.demo.algorithm.utils.MyArrayUtil;
  * @DATE: 2022年10月11日 09:45:15
  * @Description: 冒泡排序，目标：5分钟之内写出最优解
  * 20221011: 10分钟左右，看了最优解
+ * 20221011: 5分钟左右
  */
 public class BubbleSort {
 
@@ -14,7 +15,7 @@ public class BubbleSort {
         if (arr == null || arr.length < 2){
             return arr;
         }
-        for (int i = arr.length - 1; i > 0 ; i--) {
+        for (int i = arr.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (arr[j] > arr[j + 1]){
                     MyArrayUtil.swap(arr, j, j+1);
@@ -25,9 +26,6 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] randomArray = MyArrayUtil.getRandomArray(10, 100);
-        MyArrayUtil.printArray(randomArray);
-        int[] sortedArr = doSort(randomArray);
-        MyArrayUtil.printArray(sortedArr);
+        MyArrayUtil.checkAlgorithm(SelectionSort::doSort,BubbleSort::doSort,1000000,10,100);
     }
 }
