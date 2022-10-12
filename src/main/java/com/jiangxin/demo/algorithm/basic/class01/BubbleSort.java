@@ -8,6 +8,7 @@ import com.jiangxin.demo.algorithm.utils.MyArrayUtil;
  * @Description: 冒泡排序，目标：5分钟之内写出最优解
  * 20221011: 10分钟左右，看了最优解
  * 20221011: 5分钟左右
+ * 20221012: 3分钟左右，下一题
  */
 public class BubbleSort {
 
