@@ -1,5 +1,7 @@
 package com.jiangxin.demo.algorithm.basic.class01;
 
+import com.jiangxin.demo.algorithm.utils.MyArrayUtil;
+
 /**
  * @Author: xin.jiang.cn
  * @DATE: 2022年10月28日 15:59:02
@@ -16,20 +18,26 @@ public class SearchNearestIndex {
 
         int L = 0;
         int R = sortedArr.length - 1;
-
         int result = -1;
         while (L <= R){
-            int mid = L + ((R - L) >> 1);
+            int mid = L + ((R - L)>>1);
             if (sortedArr[mid] >= num){
                 result = mid;
                 R = mid - 1;
-            }else if (sortedArr[mid] < num){
+            }else {
                 L = mid + 1;
             }
         }
-
         return result;
 
+    }
+
+    public static void main(String[] args) {
+        int[] randomArray = MyArrayUtil.getRandomArray(10, 100);
+        int[] sortedArr = BubbleSort.doSort(randomArray);
+        MyArrayUtil.printArray(sortedArr);
+        int nearestIndex = nearestIndex(sortedArr, 10);
+        System.out.println("nearestIndex = " + nearestIndex);
     }
 
 }
