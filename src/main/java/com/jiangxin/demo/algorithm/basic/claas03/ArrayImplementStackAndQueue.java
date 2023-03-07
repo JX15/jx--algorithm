@@ -83,9 +83,7 @@ public class ArrayImplementStackAndQueue {
             index--;
 
             //位置调整
-            for (int i = 0; i < array.length - 1; i++) {
-                array[i] = array[i + 1];
-            }
+            System.arraycopy(array, 1, array, 0, array.length - 1);
             array[index] = null;
 
 
