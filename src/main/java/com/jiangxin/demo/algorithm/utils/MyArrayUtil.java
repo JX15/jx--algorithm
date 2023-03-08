@@ -15,7 +15,10 @@ public class MyArrayUtil {
 
 
     public static int[] getRandomArray(int maxLength,int maxValue){
-        int length = (int)(Math.random() * maxLength);
+        int length = 0;
+        while (length == 0){
+            length = (int)(Math.random() * maxLength);
+        }
         int[] resultArr =  new int[length];
         for (int i = 0; i < length; i++) {
             int value = (int)(Math.random() * maxValue) - (int)(Math.random() * maxValue);
