@@ -32,7 +32,7 @@ public class MergedSort {
         int helpIndex = 0;
         //合并左右数组
         while (pos1 <= M && pos2 <= R){
-            help[helpIndex] = arr[pos1] < arr[pos2] ? arr[pos1++] : arr[pos2++];
+            help[helpIndex++] = arr[pos1] < arr[pos2] ? arr[pos1++] : arr[pos2++];
         }
         //pos1越界或者pos2越界
         while (pos1 <= M){
