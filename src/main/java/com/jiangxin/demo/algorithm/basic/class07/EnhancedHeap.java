@@ -1,9 +1,6 @@
 package com.jiangxin.demo.algorithm.basic.class07;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author: xin.jiang.cn
@@ -106,6 +103,13 @@ public class EnhancedHeap<T> {
         heapify(indexMap.get(resign));
     }
 
+    public List<T> getAllElements(){
+        List<T> ans = new ArrayList<>();
+        for (T t : heap) {
+            ans.add(t);
+        }
+        return ans;
+    }
 
     /**
      * 从index位置向上调整堆
