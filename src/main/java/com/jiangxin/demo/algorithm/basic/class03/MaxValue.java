@@ -1,4 +1,4 @@
-package com.jiangxin.demo.algorithm.basic.claas03;
+package com.jiangxin.demo.algorithm.basic.class03;
 
 import com.jiangxin.demo.algorithm.basic.class01.InsertionSort;
 import com.jiangxin.demo.algorithm.common.ConstantNum;

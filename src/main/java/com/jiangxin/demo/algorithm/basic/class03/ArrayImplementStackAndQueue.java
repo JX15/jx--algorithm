@@ -1,11 +1,8 @@
-package com.jiangxin.demo.algorithm.basic.claas03;
+package com.jiangxin.demo.algorithm.basic.class03;
 
 import com.jiangxin.demo.algorithm.utils.MyArrayUtil;
-import jdk.internal.org.objectweb.asm.TypeReference;
 
 import java.lang.reflect.Array;
-import java.lang.reflect.Type;
-import java.util.Arrays;
 import java.util.Objects;
 import java.util.Queue;
 import java.util.Stack;

@@ -1,10 +1,9 @@
-package com.jiangxin.demo.algorithm.basic.claas03;
+package com.jiangxin.demo.algorithm.basic.class03;
 
 import com.jiangxin.demo.algorithm.utils.MyArrayUtil;
 
 import java.util.Objects;
 import java.util.Queue;
-import java.util.Stack;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**

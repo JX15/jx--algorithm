@@ -1,4 +1,4 @@
-package com.jiangxin.demo.algorithm.basic.claas03;
+package com.jiangxin.demo.algorithm.basic.class03;
 
 import java.util.LinkedList;
 import java.util.Queue;
